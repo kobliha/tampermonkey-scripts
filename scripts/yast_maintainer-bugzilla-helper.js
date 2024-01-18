@@ -21,15 +21,20 @@
     // More specific FAQ-like wiki page containing details about getting YaST/other logs, enabling verbose mode and more
     const logs_howto = 'https://en.opensuse.org/openSUSE:Report_a_YaST_bug';
 
+    const need_y2logs = "We need detailed YaST logs for understanding the details of this issue. " +
+          "Please use the supplied 'save_y2logs' script and attach the resulting file to this bug." +
+          "\n\nFor more information, see " + logs_howto + ' or more generic ' + bug_howto;
+
     // Mapping from text to replace to the new text
     // Use either ['old text', 'new text'] or [regex, 'new text']
     // See, e.g., https://www.freecodecamp.org/news/regular-expressions-for-beginners/ for reference
     const translations = [
-        [/\b(is\sa\s)*useless\s+bugreport\b/gi, 'bugreport is missing some essential information'],
+        [/\b(is\sa\s)*useless\s+bug\s*report\b/gi, 'bugreport is missing some essential information'],
         [/\b(a\s)*zero\suseful\sinformation\b/gi, 'not enough information to proceed further'],
         [/\bthere\sis\sno\s(bug\s)*description\b/gi, 'The description does not seem to contain all the relevant information to be understandable for us. Please, see ' + bug_howto + ' for more information.'],
         [/xxxdescr/gi, 'The description does not seem to contain all the relevant information to be understandable for us. Please, see ' + bug_howto + ' for more information.'],
-        [/xxxlogs/gi, "We need YaST logs for understanding the details of this issue. Please attach them into Bugzilla.\n\nFor more information, see " + logs_howto + ' or more generic ' + bug_howto],
+        [/xxxlogs/gi, need_y2logs],
+        [/need_y2logs/gi, need_y2logs],
     ];
 
     function adaptComment(comment_area) {
