@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [YMBH] YaST Maintainer Bugzilla Helper
 // @namespace    https://github.com/kobliha/tampermonkey-scripts
-// @version      1705659707
+// @version      1705660138
 // @description  This tool helps you to write often used messages faster (and better :))
 // @author       The Helper Guys
 // @match        https://bugzilla.suse.com/show_bug.cgi?id=*
@@ -31,7 +31,7 @@
         [/xxxdescr/gi, 'The description does not seem to contain all the relevant information to be understandable for us. Please, see ' + bug_howto + ' for more information.'],
         [/xxxlogs/gi, "We need YaST logs for understanding the details of this issue. Please attach them into Bugzilla.\n\nFor more information, see " + logs_howto + ' or more generic ' + bug_howto],
         [/xxxsteps/gi, 'Please, provide the step-by-step description of the issue, see more at ' + bug_howto],
-        [/xxxshrug/gi, '¯\_(:D)_/¯'],
+        [/xxxshrug/gi, '¯\\_(:D)_/¯'],
     ];
 
     function adaptComment(comment_area) {
