@@ -5,7 +5,7 @@ Scripts that help me and hopefully someone else with the daily business
 These scripts don't work on their own, you will need a **Tampermonkey** browser
 extension, see https://www.tampermonkey.net/ for details.
 
-## yast_maintainer-bugzilla-helper.js
+## yast_maintainer-bugzilla-helper
 
 As a YaST Maintainer, you often need to write repeating texts, e.g., asking for
 YaST logs and where and how to get them, solver test-case, etc. You also often
