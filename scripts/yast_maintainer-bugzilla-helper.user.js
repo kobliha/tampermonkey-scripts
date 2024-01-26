@@ -4,7 +4,8 @@
 // @version      1705668822
 // @description  This tool helps you to write often used messages faster (and better :))
 // @author       The Helper Guys
-// @match        https://bugzilla.*/show_bug.cgi?id=*
+// @match        https://bugzilla.suse.com/show_bug.cgi?id=*
+// @match        https://bugzilla.opensuse.org/show_bug.cgi?id=*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=suse.com
 // @grant        none
 // ==/UserScript==
