@@ -21,3 +21,5 @@ Just by writing this in Bugzilla comment field...
 - **xxxdescr** explains that the current description needs to be extended and how
 - **xxxshrug** makes a simple ASCII "shrug" :D
 - **xxxsteps** asks for a step-by-step workflow
+
+For adding it to your Tampermonkey instance, use https://github.com/kobliha/tampermonkey-scripts/raw/main/scripts/yast_maintainer-bugzilla-helper.user.js
