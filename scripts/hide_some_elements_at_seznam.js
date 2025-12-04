@@ -7,6 +7,7 @@
 // @match        https://www.novinky.cz/*
 // @match        https://www.seznamzpravy.cz/*
 // @match        https://medium.seznam.cz/*
+// @match        https://www.forum24.cz/*
 // @run-at       document-idle
 // @grant        none
 // ==/UserScript==
@@ -14,7 +15,7 @@
 (function() {
     'use strict';
     // Texts (links) to hide
-    const TEXTS_TO_HIDE = ["Diskuze", "Líbí se"];
+    const TEXTS_TO_HIDE = ["Diskuze", "Líbí se", "Sdílet na Facebook", "Sdílet na X"];
 
     // Hides or moves away the given element
     function hide_or_destroy(element) {
@@ -37,7 +38,7 @@
         if (node.nodeType !== 1) return; // Process only element nodes
 
         // special container
-        const asides = node.querySelectorAll('aside');
+        const asides = node.querySelectorAll('aside, seznam-pocitadlolibise');
         for (const aside of asides) {
             if (aside.style.opacity !== '0') {
                 hide_or_destroy(aside);
