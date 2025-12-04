@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hide some unnecessary page elements
-// @namespace    Hidden
-// @version      2025-12-02
+// @namespace    https://github.com/kobliha/tampermonkey-scripts
+// @version      1764854473
 // @description  Hides what is not really needed at Seznam or Novinky
 // @author       Monkey
 // @match        https://www.novinky.cz/*
@@ -10,6 +10,8 @@
 // @match        https://www.forum24.cz/*
 // @run-at       document-idle
 // @grant        none
+// @downloadURL  https://raw.githubusercontent.com/kobliha/tampermonkey-scripts/refs/heads/main/scripts/hide_some_elements_at_seznam.js
+// @updateURL    https://raw.githubusercontent.com/kobliha/tampermonkey-scripts/refs/heads/main/scripts/hide_some_elements_at_seznam.js
 // ==/UserScript==
 
 (function() {
